@@ -11,6 +11,9 @@ body {
     
 }
 
+.hidden {
+    display:none;
+}
 
 a.GrayLinks:hover {
     color: #4aaaa5;
@@ -103,9 +106,11 @@ footer {
 
 }
 
-#myImage {
+.myImage {
     float: left;
     margin-right: 10px;
+    width: 200px;
+    height: 200px;
 }
 
 #paragraph {
@@ -297,6 +302,9 @@ input.submitButton:hover {
 
 @media screen and (max-width: 980px)  {
 
+    .hidden {
+        display:none;
+    }
 /* common to all three pages */ 
     .containerBottom {
         width: 780px;
@@ -361,6 +369,10 @@ input.submitButton:hover {
         
     }
 
+    .myImage {
+        width: 200px;
+        height: 200px;
+    }
 
     hr {
         margin: 0 auto;
@@ -550,6 +562,9 @@ input.submitButton:hover {
 
   @media screen and (max-width: 768px)  {
 
+    .hidden {
+        display:none;
+    }
     .containerBottom {
         width: 768px;
         margin-left: auto;
@@ -611,6 +626,11 @@ input.submitButton:hover {
         margin-left: auto;
         margin-right: auto;
         width: 90%;
+    }
+
+    .myImage {
+        width: 250px;
+        height: 250px;
     }
 
     body {
@@ -801,6 +821,14 @@ input.submitButton:hover {
 
   @media screen and (max-width: 640px) {
 
+    .unhidden {
+        display: block;
+    }
+
+    .hideWhenSmall {
+        display:none;
+    }
+
     .containerBottom {
         width: 500px;
         margin-left: 2%;
@@ -903,6 +931,19 @@ input.submitButton:hover {
         margin-left: auto;
         margin-right: auto;
         width: 90%;
+    }
+
+    .myImage {
+        width: 300px;
+        height: 300px;
+        float: none;
+        margin-left: 150px;
+        margin-right: 100px;
+        margin-top: 30px;
+    }
+
+    #paragraph {
+        float: none;
     }
 
     body {
@@ -1084,9 +1125,7 @@ input.submitButton:hover {
         color: #ffffff;
         margin: 0 auto;
     }
-    .hidden {
-        visibility: hidden;
-    }
+    
     
         
     
