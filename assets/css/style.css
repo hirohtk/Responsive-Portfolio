@@ -91,6 +91,19 @@ wouldn't be part of the "container" */
     
 }
 
+#sectionBoxPortfolio2 {
+    position: absolute;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 700px;
+    margin-bottom: 100px;
+    border: 2px solid #dddddd;
+    background: white;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+
 footer {
     clear: both;
     position: fixed;
@@ -305,14 +318,15 @@ input.submitButton:hover {
     .hidden {
         display:none;
     }
-/* common to all three pages */ 
+
     .containerBottom {
-        width: 780px;
-        margin-left: 5%;
+        width: 100%;
+        
+        
         font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-        height: 30rem;
+        height: 60rem;
         margin-top: auto;
-        top: 100px;
+        top: 73px;
     }
     .containerTop {
         position: fixed;
@@ -321,8 +335,25 @@ input.submitButton:hover {
     }
 
     #sectionBoxPortfolio {
-        width: 50%;
-        min-width: 32rem;
+        width: 95%;
+        
+        top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        background: white;
+        font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+        color: #777777;
+        height: 40rem;
+        left: 2%;
+        right: 2%;
+        position: absolute;
+        z-index: -1;
+        
+    }
+
+    #sectionBoxPortfolio2 {
+        width: 95%;
+        
         margin-top: auto;
         margin-left: auto;
         margin-right: auto;
@@ -331,14 +362,15 @@ input.submitButton:hover {
         color: #777777;
         height: 40rem;
         left: 2%;
-        top: 83px;
-        position: fixed;
-        
+        right: 2%;
+        top: 673px;
+        position: absolute;
+        z-index: -1;
     }
 
     #sectionBoxContact {
-        width: 50%;
-        min-width: 32rem;
+        width: 95%;
+        
         margin-top: auto;
         margin-left: auto;
         margin-right: auto;
@@ -353,8 +385,8 @@ input.submitButton:hover {
     }
 
     #sectionBoxIndex {
-        width: 50%;
-        min-width: 32rem;
+        width: 95%;
+        
         margin-top: auto;
         margin-left: auto;
         margin-right: auto;
@@ -414,9 +446,7 @@ input.submitButton:hover {
         margin-top: 20px;
         position: relative;
     }
-/* common to all three pages */ 
 
-/*Contact Only */
     input {
         width: 90%;
        
@@ -428,10 +458,7 @@ input.submitButton:hover {
     
     }
 
-/*Contact Only */
 
-
-/*Portfolio only */
 
 
 .thumbnailContainer {
@@ -556,7 +583,7 @@ input.submitButton:hover {
     color: #ffffff;
     margin: 0 auto;
 }
-/*Portfolio only */
+
 
   }
 
@@ -566,13 +593,13 @@ input.submitButton:hover {
         display:none;
     }
     .containerBottom {
-        width: 768px;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
         height: 30rem;
         margin-top: auto;
-        top: 100px;
+        
     }
     .containerTop {
         position: fixed;
@@ -611,6 +638,24 @@ input.submitButton:hover {
 
     #sectionBoxPortfolio {
         width: 95%;
+        
+        top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        background: white;
+        font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+        color: #777777;
+        height: 40rem;
+        left: 2%;
+        right: 2%;
+        position: absolute;
+        z-index: -1;
+        
+    }
+
+    #sectionBoxPortfolio2 {
+        width: 95%;
+        
         margin-top: auto;
         margin-left: auto;
         margin-right: auto;
@@ -619,8 +664,10 @@ input.submitButton:hover {
         color: #777777;
         height: 40rem;
         left: 2%;
-        top: 83px;
-        position: fixed;
+        right: 2%;
+        top: 673px;
+        position: absolute;
+        z-index: -1;
     }
     hr {
         margin-left: auto;
@@ -821,6 +868,10 @@ input.submitButton:hover {
 
   @media screen and (max-width: 640px) {
 
+    .myName {
+      
+    }
+
     .unhidden {
         display: block;
     }
@@ -830,9 +881,9 @@ input.submitButton:hover {
     }
 
     .containerBottom {
-        width: 500px;
-        margin-left: 2%;
-        margin-right: 2%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
         font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
         height: 60rem;
         margin-top: auto;
@@ -846,6 +897,7 @@ input.submitButton:hover {
         width: 100%;
         font-family: 'Georgia', Times, Times New Roman, serif;
         z-index: 2;
+        height: 50px;
     }
 
     header {
@@ -865,7 +917,7 @@ input.submitButton:hover {
     #NameBox {
         color:White;
         background-color: #4aaaa5;
-        width: 640px;
+        width: 100%;
         position:relative;
         margin-left: 0px;
         font-size: 20px;
@@ -879,8 +931,10 @@ input.submitButton:hover {
         margin-right: auto;
         margin-left: auto;
         bottom: 10px;
-        left: 230px;
-        position: relative;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%)
+        
     }
 
     #sectionBoxIndex {
@@ -913,20 +967,36 @@ input.submitButton:hover {
     }
 
     #sectionBoxPortfolio {
-        width: 550px;
+        width: 95%;
         margin-top: auto;
         margin-left: auto;
         margin-right: auto;
         background: white;
         font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
         color: #777777;
-        height: 60rem;
+        height: 65rem;
         top: 83px;
-        position: relative;
+        position: absolute;
         z-index: -1;
         
-        
     }
+    #sectionBoxPortfolio2 {
+        width: 95%;
+        
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+        background: white;
+        font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+        color: #777777;
+        height: 40rem;
+        left: 2%;
+        right: 2%;
+        top: 1173px;
+        position: absolute;
+        z-index: -1;
+    }
+
     hr {
         margin-left: auto;
         margin-right: auto;
@@ -989,17 +1059,10 @@ input.submitButton:hover {
     }
 
 /* Is this redundant code? May need to check it out in the future*/ 
-    .thumbnailContainer {
-        position: relative;
-        width: 780px;
-        height: 700px;
-        margin-left: 20px;
-        margin-top: 10px;
-    }
+    
 
     .thumbnailContainer {
         position: relative;
-        width: 460px;
         height: 700px;
         margin-left: 20px;
         
@@ -1014,7 +1077,8 @@ input.submitButton:hover {
         margin-right: 20px;
         margin-bottom: 10px;
         position: relative;
-        
+        transform: translate(-50%,-50%);
+        top: 100px;
     }
 
     #smVerticalThumbnails {
@@ -1034,7 +1098,7 @@ input.submitButton:hover {
         width: 200px;
         height: 45px;
         position: absolute;
-        top: 100px;
+        top: 130px;
         z-index: 1;
         margin: 0px 0px 0px 0px;
         display: flex;
@@ -1043,7 +1107,7 @@ input.submitButton:hover {
         color:white;
         font-weight:bold;
         left: 160px;
-        
+        transform: translate(-50%,-50%);
     }
     
     
@@ -1052,7 +1116,7 @@ input.submitButton:hover {
         width: 200px;
         height: 45px;
         position: absolute;
-        top: 290px;
+        top: 320px;
         left: 160px;
         z-index: 1;
         margin: 0px 0px 0px 0px;
@@ -1061,7 +1125,7 @@ input.submitButton:hover {
         text-align: center;
         color:white;
         font-weight:bold;
-        
+        transform: translate(-50%,-50%);
         
     }
     
@@ -1070,7 +1134,7 @@ input.submitButton:hover {
         width: 200px;
         height: 45px;
         position: absolute;
-        top: 480px;
+        top: 510px;
         z-index: 1;
         margin: 0px 0px 0px 0px;
         display: flex;
@@ -1079,6 +1143,7 @@ input.submitButton:hover {
         color:white;
         font-weight:bold;
         left: 160px;
+        transform: translate(-50%,-50%);
     }
     
     #thumbnailBox4 {
@@ -1086,7 +1151,7 @@ input.submitButton:hover {
         width: 200px;
         height: 45px;
         position: absolute;
-        top: 670px;
+        top: 700px;
         z-index: 1;
         margin: 0px 0px 0px 0px;
         display: flex;
@@ -1095,6 +1160,7 @@ input.submitButton:hover {
         color:white;
         font-weight:bold;
         left: 160px;
+        transform: translate(-50%,-50%);
     }
     
     #thumbnailBox5 {
@@ -1110,8 +1176,9 @@ input.submitButton:hover {
         text-align: center;
         color:white;
         font-weight:bold;
-        top: 860px;
+        top: 890px;
         left: 160px;
+        transform: translate(-50%,-50%);
     }
 
     
