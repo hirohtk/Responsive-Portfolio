@@ -3,10 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kensen's Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <STYLE>A {text-decoration: none;} </STYLE>
+    <STYLE>
+        A {
+            text-decoration: none;
+        }
+    </STYLE>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -15,7 +21,7 @@
     <header>
         <div id="HeaderBackground">
             <div class="containerTop">
-                <div id="NameBox"><b class = "myName">Kensen Hirohata</b>
+                <div id="NameBox"><b class="myName">Kensen Hirohata</b>
                 </div>
                 <div id="LinksBox">
                     <a class="GrayLinks" href="index.html">About | </a>
@@ -30,10 +36,10 @@
     </header>
     </div>
 
-    
+
 
     <div class="containerBottom">
-        <section id="sectionBoxPortfolio"> 
+        <section id="sectionBoxPortfolio">
 
             <h1>Portfolio - Assignments</h1>
             <hr>
@@ -42,38 +48,52 @@
                 <div id="thumbnailBox1">
                     <a id="WhiteLinks" href="https://hirohtk.github.io/Word-guess-game/">Hangman</a>
                 </div>
-                <img class="thumbnails" id="smVerticalThumbnails" src="assets/images/tumblr_ovplyvFFBn1qeyvpto1_500.gif">
+                <img class="thumbnails" id="smVerticalThumbnails"
+                    src="assets/images/tumblr_ovplyvFFBn1qeyvpto1_500.gif">
                 <div id="thumbnailBox2">
                     <a id="WhiteLinks" href="https://hirohtk.github.io/Star-wars-game/">RPG Game</a>
                 </div>
                 <br>
-                <img class="thumbnails" id="smVerticalThumbnails"  src="assets/images/tumblr_oya8gndrCI1qeyvpto1_500.gif">
+                <img class="thumbnails" id="smVerticalThumbnails"
+                    src="assets/images/tumblr_oya8gndrCI1qeyvpto1_500.gif">
                 <div id="thumbnailBox3">
                     <a id="WhiteLinks" href="https://hirohtk.github.io/TriviaGame/">Trivia Game</a>
                 </div>
-                <img class="thumbnails" id="smVerticalThumbnails"  src="assets/images/4.jpg">
+                <img class="thumbnails" id="smVerticalThumbnails" src="assets/images/4.jpg">
                 <div id="thumbnailBox4">
                     <a id="WhiteLinks" href="https://google.com/webhp?complete=0&hl=en">Rutgers Info Widget</a>
                 </div>
                 <br>
-                <img class="thumbnails" id="smVerticalThumbnails"  src="assets/images/5.jpg">
+                <img class="thumbnails" id="smVerticalThumbnails" src="assets/images/5.jpg">
                 <div id="thumbnailBox5">
                     <a id="WhiteLinks" href="https://google.com/webhp?complete=0&hl=en">Rock Paper Scissors</a>
                 </div>
-                
+
             </div>
         </section>
-        <section id="sectionBoxPortfolio2"> 
+        <section id="sectionBoxPortfolio2">
 
             <h1>Portfolio - Projects</h1>
             <hr>
             <div class="thumbnailContainer">
+                <!-- The Modal -->
+                <div id="projectModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Happy Hour Project: Select a page to visit:</p>
+                        <p><h1><a href='https://neverage84.github.io/Project_1'>Deployed Site</a></h1></p>
+                        <p><h1><a href='https://github.com/neverage84/Project_1'>Github Repository</a></h1></p>
+                    </div>
+
+                </div>
                 <img class="thumbnails" id="smVerticalThumbnails" src="assets/images/CocktailMain.jpg">
-                <div id="thumbnailBox1">
-                    <a id="WhiteLinks" href="https://neverage84.github.io/Project_1/">Happy Hour</a>
+                <div id="thumbnailBox6">
+                    <a id="WhiteLinks">Happy Hour</a>
                 </div>
             </div>
-           
+
         </section>
     </div>
 
@@ -89,7 +109,7 @@
         <br><b>Copyright©</b>
     </footer>
 
-
+    <script src="app.js"></script>
 
 </body>
 
