@@ -1,5 +1,6 @@
 var modalPr1 = document.getElementById("project1Modal");
 var modalAss1 = document.getElementById("Ass1Modal");
+var modalAss2 = document.getElementById("Ass2Modal");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -19,6 +20,25 @@ $("#thumbnailBox1").on("click", function () {
     window.onclick = function (event) {
         if (event.target == modalAss1) {
             modalAss1.style.display = "none";
+            enableScroll();
+        }
+    }
+});
+
+$("#thumbnailBox2").on("click", function () {
+   
+    modalAss2.style.display = "block";
+    disableScroll();
+
+    span.onclick = function () {
+        modalAss2.style.display = "none";
+        enableScroll();
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modalAss2) {
+            modalAss2.style.display = "none";
             enableScroll();
         }
     }
