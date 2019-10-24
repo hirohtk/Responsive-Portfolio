@@ -1,9 +1,13 @@
 var modalPr1 = document.getElementById("project1Modal");
 var modalAss1 = document.getElementById("Ass1Modal");
 var modalAss2 = document.getElementById("Ass2Modal");
+var modalAss3 = document.getElementById("Ass3Modal");
+var modalAss4 = document.getElementById("Ass4Modal");
+var modalAss5 = document.getElementById("Ass5Modal");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
+
 
 
 $("#thumbnailBox1").on("click", function () {
@@ -39,6 +43,65 @@ $("#thumbnailBox2").on("click", function () {
     window.onclick = function (event) {
         if (event.target == modalAss2) {
             modalAss2.style.display = "none";
+            enableScroll();
+        }
+    }
+});
+
+$("#thumbnailBox3").on("click", function () {
+   
+    modalAss3.style.display = "block";
+    disableScroll();
+    
+
+    span.onclick = function () {
+        modalAss3.style.display = "none";
+        enableScroll();
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modalAss3) {
+            modalAss3.style.display = "none";
+            enableScroll();
+            
+        }
+    }
+});
+
+$("#thumbnailBox4").on("click", function () {
+   
+    modalAss4.style.display = "block";
+    disableScroll();
+
+    span.onclick = function () {
+        modalAss4.style.display = "none";
+        enableScroll();
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modalAss4) {
+            modalAss4.style.display = "none";
+            enableScroll();
+        }
+    }
+});
+
+$("#thumbnailBox5").on("click", function () {
+   
+    modalAss5.style.display = "block";
+    disableScroll();
+
+    span.onclick = function () {
+        modalAss5.style.display = "none";
+        enableScroll();
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modalAss5) {
+            modalAss5.style.display = "none";
             enableScroll();
         }
     }
