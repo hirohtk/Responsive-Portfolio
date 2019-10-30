@@ -317,6 +317,23 @@ input.submitButton:hover {
     
 }
 
+#thumbnailBox7 {
+    background-color:  #4aaaa5;
+    width: 200px;
+    height: 45px;
+    position: absolute;
+    top: 480px;
+    left: 224px;
+    z-index: 1;
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color:white;
+    font-weight:bold;
+    
+}
+
 .thumbnailContainer {
     position: relative;
     width: 460px;

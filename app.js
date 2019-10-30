@@ -4,6 +4,7 @@ var modalAss2 = document.getElementById("Ass2Modal");
 var modalAss3 = document.getElementById("Ass3Modal");
 var modalAss4 = document.getElementById("Ass4Modal");
 var modalAss5 = document.getElementById("Ass5Modal");
+var modalAss6 = document.getElementById("Ass6Modal");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -127,6 +128,43 @@ $("#thumbnailBox6").on("click", function () {
     }
 });
 
+$("#thumbnailBox6").on("click", function () {
+    modalPr1.style.display = "block";
+    disableScroll();
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modalPr1.style.display = "none";
+        enableScroll();
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modalPr1) {
+            modalPr1.style.display = "none";
+            enableScroll();
+        }
+    }
+});
+
+$("#thumbnailBox7").on("click", function () {
+    modalAss6.style.display = "block";
+    disableScroll();
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modalAss6.style.display = "none";
+        enableScroll();
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modalAss6) {
+            modalAss6.style.display = "none";
+            enableScroll();
+        }
+    }
+});
 
 
 function disableScroll() {
